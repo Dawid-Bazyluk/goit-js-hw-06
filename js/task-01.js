@@ -1,23 +1,9 @@
 const itemsByCategory = document.querySelectorAll(".item");
-const countCategories = `Number of categories: ${itemsByCategory.length}`;
-const title = document.querySelectorAll("h2").innerHTML;
+console.log("Number of categories:", itemsByCategory.length);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------------------------*/
-console.log(countCategories);
-
+itemsByCategory.forEach((e) => {
+  const title = e.querySelector("h2").innerHTML;
+  console.log("Category:", title);
+  const elements = e.querySelectorAll("ul>li");
+  console.log("Elements:", elements.length);
+});
