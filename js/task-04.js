@@ -11,10 +11,6 @@ const decrement = () => {
   showValue.textContent = counterValue;
 };
 
-
-
-
-
 plusBtn.addEventListener("click", increment);
 
-minusBtn.addEventListener("click", decrement );
+minusBtn.addEventListener("click", decrement);
